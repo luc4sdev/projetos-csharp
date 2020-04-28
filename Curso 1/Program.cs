@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Curso_1.Entities;
+using Curso_1.Entities.Enums;
+using System;
 using System.Globalization;
 
 namespace Curso_1
@@ -7,12 +9,20 @@ namespace Curso_1
     {
         static void Main(string[] args)
         {
-            int[] vet;
-            int x = 8;
-            vet = new int[x];
-            Console.WriteLine("JOGO!");
-            Console.WriteLine("Criando app de jogos");
-            Console.WriteLine("Eai bao");
+            Order order = new Order
+            {
+                Id = 1080,
+                Moment = DateTime.Now,
+                Status = OrderStatus.PendingPayment
+            };
+
+            Console.WriteLine(order);
+            string txt = OrderStatus.PendingPayment.ToString();
+            Console.WriteLine(txt);
+            OrderStatus os = Enum.Parse<OrderStatus>("Delivered");
+            Console.WriteLine(os);
         }
+
     }
 }
+
