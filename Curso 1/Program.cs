@@ -11,6 +11,7 @@ namespace Curso_1
             int x = 8;
             vet = new int[x];
             Console.WriteLine("JOGO!");
+            Console.WriteLine("Criando app de jogos");
         }
     }
 }
