@@ -7,9 +7,10 @@ namespace Curso_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("eAI");
-            Console.WriteLine("COMO VAI");
-            Console.WriteLine("BEM");
-        }  
+            int[] vet;
+            int x = 8;
+            vet = new int[x];
+            Console.WriteLine("JOGO!");
+        }
     }
 }
